@@ -8,7 +8,7 @@ background-image: linear-gradient(19deg, #625d5c 0%, #afa8c5 19%, #bb8c8c 39%, #
 .lista-navbar {
 
     background: none;
-    color: rgb(232, 232, 241);
+    color: rgb(222, 222, 235);
     border: none;
 }
 
@@ -28,14 +28,14 @@ font-size: 15px;
 text-align: justify;
 }
 
-.mititle{
-
-font-family: 'Montserrat', sans-serif;
-font-family: 'Mooli', sans-serif;
-font-size: 50px;
-text-align:center;
-color: #cbacac;
-}
+.mititle {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mooli', sans-serif;
+    font-size: 70px;
+    text-align: center;
+    color: #111010;
+   
+  }
 
 .card-container {
     display: flex;
@@ -43,9 +43,9 @@ color: #cbacac;
   }
   
   .card {
-    width: 35%; /* Tamaño de cada cuadro */
-    border: 1px solid #ccc; /* Borde opcional */
-    margin: 5px; /* Margen entre los cuadros */
+    width: 35%; 
+    border: 1px solid #ccc; 
+    margin: 5px;
   }
   
   /* Estilos personalizados para títulos y texto */
@@ -64,12 +64,12 @@ color: #cbacac;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo con opacidad */
+    background-color: rgba(0, 0, 0, 0.5); 
   }
   
   .text {
-    color: white; /* Color del texto */
-    font-size: 24px; /* Tamaño de fuente */
+    color: white;
+    font-size: 24px; 
   }
   
 
@@ -126,55 +126,185 @@ justify-content: center;
 
 .miitem li{
     list-style: none;
+    text-align: left;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out;
+    border-radius: 50%;
+    margin: 0 5px;
 }
 
-.miitem li a{
-    color: white;
-    text-decoration: none;
+.miitem h4 {
+    list-style: none;
+    text-align: left;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out;
+    border-radius: 50%;
+    margin: 0 40px;
 }
 
-/* Estilos para el contenedor del formulario */
-.users-form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f5f5f5;
-    border: 2px solid #ddd;
-    border-radius: 10px;
+
+/*estilo de inscripcion*/
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    font-family: 'Segoe UI', sans-serif;
     text-align: center;
 }
 
-/* Estilos para el encabezado */
-.users-form h1 {
-    font-size: 32px;
-    color: #333;
-    font-weight: 600;
-    margin-bottom: 20px;
-    text-transform: uppercase;
+a {
+    text-decoration: none;
 }
 
-/* Estilos para los campos de entrada de texto */
-.miusers-form input[type="text"],
-.miusers-form input[type="email"] {
+.users-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 400px;
+    background: #625d5c; 
+    background-image: linear-gradient(19deg, #625d5c 0%, #afa8c5 19%, #bb8c8c 39%, #876161 60%, #cbacac 80%, #7f6464 100%); /* Fondo con gradiente del navbar */
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.users-form h1 {
+    font-size: 36px; 
+    margin-bottom: 20px;
+    color: #fff; 
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+    font-weight: bold;
+}
+
+.users-form input.form-input,
+.users-form textarea.message-input {
     width: 100%;
     padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    margin: 8px 0;
+    border: none; 
+    background: rgba(255, 255, 255, 0.8); 
+    border-radius: 4px;
+    outline: none;
+    transition: 0.3s;
 }
 
-/* Estilos para el botón de envío */
-.miusers-form input[type="submit"] {
-    background-color: #007bff;
-    color: #fff;
+.users-form input.form-input:focus,
+.users-form textarea.message-input:focus {
+    background: #fff; 
+}
+
+.users-form textarea.message-input {
+    height: 150px;
+}
+
+/* Estilos para el botón de envío del formulario en un tono morado */
+.users-form button.submit-button {
+    background-color: #c1b0df; /* Morado */
+    color: white;
     border: none;
+    padding: 12px;
     border-radius: 5px;
-    padding: 10px 20px;
     cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
+    transition-duration: 0.4s;
+    width: 100%;
 }
 
-.miusers-form input[type="submit"]:hover {
-    background-color: #0056b3;
+.users-form button.submit-button:hover {
+    background-color: #dda2e7; 
 }
+
+body{
+    background-image: url("img/fondo.gif");
+
+}
+
+.miformulario{
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.21);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.6px);
+-webkit-backdrop-filter: blur(6.6px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.Btn {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .svgContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    letter-spacing: 0.8px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    border: 1px solid rgba(156, 156, 156, 0.466);
+  }
+  
+  .parent {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 10px;
+  }
+  
+  .child {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out;
+    border-radius: 50%;
+    margin: 0 5px;
+  }
+  
+  .child:hover {
+    background-color: white;
+    background-position: -100px 100px, -100px 100px;
+    transform: rotate3d(0.5, 1, 0, 30deg);
+    transform: perspective(180px) rotateX(60deg) translateY(2px);
+    box-shadow: 0px 10px 10px rgb(1, 49, 182);
+  }
+  
+  button {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+  }
+  
+  .button:hover {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    transform: translate3d(0px, 0px, 15px) perspective(180px) rotateX(-35deg) translateY(2px);
+    border-radius: 50%;
+  }
+  

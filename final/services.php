@@ -1,15 +1,10 @@
 <?php
 
-include("nexus.php");
-
-$con= connection(); 
-
-$sql = "SELECT * FROM club";
-
-$query = mysqli_query($con, $sql);
-
 
 ?>
+
+
+
 
 
 <!DOCTYPE html>
@@ -18,13 +13,10 @@ $query = mysqli_query($con, $sql);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Servicios</title>
     <link rel="stylesheet" href="estilos.css">
-    
-    <title>formulario</title>
 </head>
-
 <body>
-    
 <header>
   <nav class="navbar navbar-expand-lg mivavpar">
     <div class="container-fluid">
@@ -41,13 +33,13 @@ $query = mysqli_query($con, $sql);
               <button class="lista-navbar">Inicio</button></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./aboutus.php"><button class="lista-navbar">Quienes somos</button></a>
+            <a class="nav-link" href="#"><button class="lista-navbar">Quienes somos</button></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./services.php"><button class="lista-navbar">Servicios</button></a>
+            <a class="nav-link" href="#"><button class="lista-navbar">Servicios</button></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./contacto.php"><button class="lista-navbar" >Contacto</button></a>
+            <a class="nav-link" href="#"><button class="lista-navbar" >Contacto</button></a>
           </li>
         </ul>
       </div>
@@ -56,23 +48,47 @@ $query = mysqli_query($con, $sql);
 </header>
 
 <section>
-<h1>CONTACTO</h1>
+<h1>SERVICIOS</h1>
 </section>
+    <div class="container">
+        <div class="service-box">
+            <img src="./img/indv.jpg" alt="Servicio 1">
+            <h3>Asesoramiento Individual</h3>
+            <p>Sesiones de terapia individual con psicólogos o consejeros para abordar problemas emocionales y psicológicos de manera personalizada.</p>
+        </div>
 
-<div class="users-form">
-    <h1>Contacto</h1>
-    <form action="register.php" method="POST">
-        <input type="text" placeholder="Nombre" name="nombre" class="form-input">
-        <input type="text" placeholder="Apellido" name="apellido" class="form-input">
-        <input type="email" placeholder="Correo Electrónico" name="email" class="form-input">
-        <input type="text" placeholder="Telefono" name="telefono" class="form-input">
-        <textarea placeholder="Mensaje" name="mensaje" class="message-input"></textarea>
-        <button type="submit" class="submit-button">Enviar mensaje</button>
-    </form>
-</div>
+        <div class="service-box">
+            <img src="./img/pareja.jpg" alt="Servicio 2">
+            <h3>Terapia de Pareja</h3>
+            <p>Apoyo para mejorar la comunicación y resolver conflictos en relaciones de pareja.</p>
+        </div>
 
+        <div class="service-box">
+            <img src="./img/familiar.jpg" alt="Servicio 3">
+            <h3>Terapia Familiar</h3>
+            <p>Terapia dirigida a familias para abordar problemas familiares, comunicación y dinámicas familiares.</p>
+        </div>
 
-<footer class="mifooter d-flex justify-content-space-evenly">
+        <div class="service-box">
+            <img src="./img/Grupal.jpg" alt="Servicio 4">
+            <h3>Terapia de Grupo</h3>
+            <p>Sesiones de terapia grupal que ofrecen apoyo y oportunidades para compartir experiencias y estrategias de afrontamiento.</p>
+        </div>
+
+        <div class="service-box">
+            <img src="./img/niño.jpg" alt="Servicio 5">
+            <h3>Psicoterapia para Niños y Adolescentes</h3>
+            <p>Servicios adaptados a las necesidades de niños y adolescentes, abordando problemas específicos relacionados con su desarrollo.</p>
+        </div>
+
+        <div class="service-box">
+            <img src="./img/tele (1).jpg" alt="Servicio 6">
+            <h3>Terapia en Línea</h3>
+            <p>Ofrecer sesiones de terapia a través de videoconferencia para brindar acceso a la atención de salud mental desde cualquier ubicación.</p>
+        </div>
+    </div>
+
+    <footer class="mifooter d-flex justify-content-space-evenly">
     <div class="row d-flex align-items-left">
         <div class="col-md-4 miitem">
             <h4>Información</h4>
@@ -126,6 +142,8 @@ $query = mysqli_query($con, $sql);
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
