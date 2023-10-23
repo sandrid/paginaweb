@@ -1,0 +1,180 @@
+.mivavpar{
+   
+    background-color: #625d5c;
+background-image: linear-gradient(19deg, #625d5c 0%, #afa8c5 19%, #bb8c8c 39%, #876161 60%, #cbacac 80%, #7f6464 100%);
+
+}
+
+.lista-navbar {
+
+    background: none;
+    color: rgb(232, 232, 241);
+    border: none;
+}
+
+.lista-navbar:hover {
+
+    background-color: #625d5c;
+    background-image: linear-gradient(19deg, #625d5c 0%, #89819a 19%, #a87070 39%, #a87c7c 60%, #897f7f 80%, #b9a3a3 100%);    
+    border-radius: 20px;
+    padding: 10px;    
+}
+
+.custom-font{
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'Mooli', sans-serif;
+font-size: 15px;
+text-align: justify;
+}
+
+.mititle{
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'Mooli', sans-serif;
+font-size: 50px;
+text-align:center;
+color: #cbacac;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card {
+    width: 35%; /* Tamaño de cada cuadro */
+    border: 1px solid #ccc; /* Borde opcional */
+    margin: 5px; /* Margen entre los cuadros */
+  }
+  
+  /* Estilos personalizados para títulos y texto */
+  .mititle {
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo con opacidad */
+  }
+  
+  .text {
+    color: white; /* Color del texto */
+    font-size: 24px; /* Tamaño de fuente */
+  }
+  
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-box {
+    width: calc(33.33% - 20px);
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.service-box img {
+    max-width: 150px;
+}
+
+.service-box h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.service-box p {
+    font-size: 14px;
+}
+
+.service-box:hover {
+    background-color: #625d5c;
+    background-image: linear-gradient(19deg, #625d5c 0%, #89819a 19%, #a87070 39%, #a87c7c 60%, #897f7f 80%, #b9a3a3 100%);    
+    border-radius: 20px;
+    padding: 10px;
+    
+}
+
+.mifooter{
+    background-color: #625d5c;
+    background-image: linear-gradient(19deg, #625d5c 0%, #89819a 19%, #a87070 39%, #a87c7c 60%, #897f7f 80%, #b9a3a3 100%);
+display: flex;
+justify-content: center;
+}
+
+.miitem{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 15px;
+}
+
+.miitem li{
+    list-style: none;
+}
+
+.miitem li a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos para el contenedor del formulario */
+.users-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Estilos para el encabezado */
+.users-form h1 {
+    font-size: 32px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Estilos para los campos de entrada de texto */
+.miusers-form input[type="text"],
+.miusers-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Estilos para el botón de envío */
+.miusers-form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.miusers-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
